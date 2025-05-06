@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Package, Facebook, Twitter, Instagram, Phone } from 'lucide-react';
+import { Package, Facebook, Twitter, Instagram, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -21,13 +21,13 @@ const Footer = () => {
               Fast and reliable motorcycle courier service for both parcel deliveries and food purchases across Zimbabwe.
             </p>
             <div className="flex space-x-3">
-              <a href="#" className="text-white hover:text-mydelivery-yellow transition-colors">
+              <a href="https://facebook.com/mydeliveryzw" className="text-white hover:text-mydelivery-yellow transition-colors" aria-label="Facebook">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white hover:text-mydelivery-yellow transition-colors">
+              <a href="https://twitter.com/mydeliveryzw" className="text-white hover:text-mydelivery-yellow transition-colors" aria-label="Twitter">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white hover:text-mydelivery-yellow transition-colors">
+              <a href="https://instagram.com/mydeliveryzw" className="text-white hover:text-mydelivery-yellow transition-colors" aria-label="Instagram">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -80,7 +80,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/driver" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/careers" className="text-gray-300 hover:text-white transition-colors">
                   Become a Driver
                 </Link>
               </li>
@@ -92,15 +92,22 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <div className="flex items-center space-x-3 mb-3">
               <Phone className="h-5 w-5 text-mydelivery-yellow" />
-              <span className="text-gray-300">+263 77 123 4567</span>
+              <span className="text-gray-300">+263 771 996 668</span>
             </div>
-            <div className="mt-6">
+            <div className="flex items-center space-x-3 mb-6">
+              <Mail className="h-5 w-5 text-mydelivery-yellow" />
+              <a href="mailto:info@mydelivery.co.zw" className="text-gray-300 hover:text-white transition-colors">
+                info@mydelivery.co.zw
+              </a>
+            </div>
+            <div>
               <h4 className="text-sm font-semibold mb-2">Join our newsletter</h4>
               <div className="flex">
                 <input
                   type="email"
                   placeholder="Your email"
                   className="py-2 px-3 rounded-l-md text-black flex-1"
+                  aria-label="Email for newsletter"
                 />
                 <Button
                   className="bg-mydelivery-yellow text-mydelivery-blue hover:bg-mydelivery-yellow/90 rounded-l-none"

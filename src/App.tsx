@@ -14,6 +14,12 @@ import AdminDashboard from "./pages/AdminDashboard";
 import DriverInterface from "./pages/DriverInterface";
 import NotFound from "./pages/NotFound";
 import { AuthProvider } from "./hooks/useAuth";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import ParcelServicePage from "./pages/services/ParcelServicePage";
+import FoodServicePage from "./pages/services/FoodServicePage";
+import BusinessSolutionsPage from "./pages/BusinessSolutionsPage";
+import CareersPage from "./pages/CareersPage";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +38,12 @@ const App = () => (
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/auth" element={<AuthPage />} />
                 <Route path="/track" element={<TrackPage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/services/parcel" element={<ParcelServicePage />} />
+                <Route path="/services/food" element={<FoodServicePage />} />
+                <Route path="/business" element={<BusinessSolutionsPage />} />
+                <Route path="/careers" element={<CareersPage />} />
                 <Route path="/admin" element={<AdminDashboard />} />
                 <Route path="/driver" element={<DriverInterface />} />
                 <Route path="*" element={<NotFound />} />
