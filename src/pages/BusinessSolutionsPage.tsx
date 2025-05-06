@@ -6,7 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { 
   Building, TrendingUp, BarChart3, Truck, Package, 
-  ShieldCheck, FileText, MessageSquare, CheckCircle, Store
+  ShieldCheck, FileText, MessageSquare, CheckCircle, Store,
+  Phone, Mail, MapPin
 } from 'lucide-react';
 
 const BusinessSolutionsPage = () => {
