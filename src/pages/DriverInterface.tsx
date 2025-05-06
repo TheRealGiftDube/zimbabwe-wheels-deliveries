@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { MapPin, Package, Phone, ArrowRight, Clock, Navigation, User } from 'lucide-react';
 
-const DriverInterface = () => {
+const DriverInterface: React.FC = () => {
   const [isOnline, setIsOnline] = useState(true);
   
   return (
@@ -31,7 +31,7 @@ const DriverInterface = () => {
                 </span>
                 <Switch
                   checked={isOnline}
-                  onCheckedChange={setIsOnline}
+                  onCheckedChange={(checked) => setIsOnline(checked)}
                 />
               </div>
             </div>
