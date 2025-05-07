@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Menu, X, User, Package, Bell, MapPin } from 'lucide-react';
+import { Menu, X, Package, Phone } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +26,12 @@ const Navbar = () => {
             </div>
             <span className="font-bold text-xl">MyDelivery</span>
           </Link>
+          
+          {/* Phone number in navbar */}
+          <div className="hidden md:flex items-center">
+            <Phone className="h-5 w-5 text-mydelivery-green mr-2" />
+            <span className="font-bold">0771 99 666 8</span>
+          </div>
           
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -52,6 +58,18 @@ const Navbar = () => {
               Home
             </Link>
             <Link 
+              to="/services/parcel" 
+              className={`nav-item ${isActive('/services/parcel') ? 'active' : ''}`}
+            >
+              Parcel Delivery
+            </Link>
+            <Link 
+              to="/services/food" 
+              className={`nav-item ${isActive('/services/food') ? 'active' : ''}`}
+            >
+              Food Delivery
+            </Link>
+            <Link 
               to="/track" 
               className={`nav-item ${isActive('/track') ? 'active' : ''}`}
             >
@@ -69,18 +87,6 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            
-            <div className="pl-4 ml-4 border-l flex items-center gap-2">
-              <Button variant="ghost" size="icon" aria-label="Notifications">
-                <Bell className="h-5 w-5" />
-              </Button>
-              <Link to="/login">
-                <Button className="bg-mydelivery-green hover:bg-mydelivery-green/90 flex items-center gap-2">
-                  <User className="h-4 w-4" />
-                  <span>Login</span>
-                </Button>
-              </Link>
-            </div>
           </div>
         </div>
         
@@ -94,6 +100,20 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Home
+              </Link>
+              <Link 
+                to="/services/parcel" 
+                className={`nav-item ${isActive('/services/parcel') ? 'active' : ''}`}
+                onClick={() => setIsOpen(false)}
+              >
+                Parcel Delivery
+              </Link>
+              <Link 
+                to="/services/food" 
+                className={`nav-item ${isActive('/services/food') ? 'active' : ''}`}
+                onClick={() => setIsOpen(false)}
+              >
+                Food Delivery
               </Link>
               <Link 
                 to="/track" 
@@ -116,13 +136,9 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-              <div className="pt-3 mt-3 border-t">
-                <Link to="/login" onClick={() => setIsOpen(false)}>
-                  <Button className="bg-mydelivery-green hover:bg-mydelivery-green/90 w-full flex items-center justify-center gap-2">
-                    <User className="h-4 w-4" />
-                    <span>Login</span>
-                  </Button>
-                </Link>
+              <div className="flex items-center mt-2 pt-2 border-t">
+                <Phone className="h-5 w-5 text-mydelivery-green mr-2" />
+                <span className="font-bold">0771 99 666 8</span>
               </div>
             </div>
           </div>
