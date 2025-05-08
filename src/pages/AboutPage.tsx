@@ -11,22 +11,22 @@ const AboutPage = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-mydelivery-blue mb-6">About MyDelivery</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Zimbabwe's newest delivery service, connecting people with the things they need through innovative solutions.
+            Zimbabwe's newest delivery startup, beginning our journey to reshape local logistics.
           </p>
         </div>
         
         {/* Our Story */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 items-center">
           <div>
-            <h2 className="text-3xl font-bold text-mydelivery-blue mb-4">Our Story</h2>
+            <h2 className="text-3xl font-bold text-mydelivery-blue mb-4">Our Beginning</h2>
             <p className="text-gray-700 mb-4">
-              Founded in early 2025, MyDelivery was born from a simple vision: to transform how local deliveries work in Zimbabwe.
+              Founded in early 2025, MyDelivery started with a simple vision: to build a more accessible delivery service for Zimbabwe.
             </p>
             <p className="text-gray-700 mb-4">
-              Starting with a focused operation in Harare, we're building the foundation for what will become Zimbabwe's most reliable delivery network. Our journey has just begun, and we're excited about the road ahead.
+              We've taken our first steps in Harare, where we're learning and adapting every day. Though we're small now, we're laying the groundwork for something bigger.
             </p>
             <p className="text-gray-700">
-              With plans for expansion to Bulawayo, Gweru, and Mutare on our roadmap, we're committed to creating a delivery service that truly meets the needs of Zimbabweans across the country.
+              Our roadmap includes expansion to Bulawayo, Gweru, and Mutare as we grow, with the goal of creating a nationwide delivery network that truly serves Zimbabweans everywhere.
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-lg bg-gray-100 flex items-center justify-center p-8">
@@ -42,22 +42,22 @@ const AboutPage = () => {
               {
                 icon: Clock,
                 title: "Reliability",
-                description: "We understand that time matters. Our commitment to on-time delivery drives everything we do."
+                description: "We believe that punctuality matters. Every delivery, no matter how small, deserves to arrive on time."
               },
               {
                 icon: Shield,
                 title: "Security",
-                description: "Every package is treated with care, with plans to implement insurance coverage as we grow."
+                description: "Your packages are safe with us. As we grow, we plan to introduce insurance coverage for added peace of mind."
               },
               {
                 icon: Users,
                 title: "Community",
-                description: "We're proud to create employment opportunities and contribute to our local communities."
+                description: "We're creating meaningful employment opportunities for motorcycle riders in our community."
               },
               {
                 icon: MapPin,
                 title: "Accessibility",
-                description: "Our vision is to make delivery services available to everyone across Zimbabwe."
+                description: "Our goal is to make reliable delivery services available to everyone in Zimbabwe, starting from Harare."
               }
             ].map((value, index) => (
               <Card key={index} className="border-t-4 border-t-mydelivery-green">
@@ -75,23 +75,23 @@ const AboutPage = () => {
         
         {/* Leadership Team with Silhouettes */}
         <div className="mb-20">
-          <h2 className="text-3xl font-bold text-mydelivery-blue mb-8 text-center">Our Vision Team</h2>
+          <h2 className="text-3xl font-bold text-mydelivery-blue mb-8 text-center">Our Team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 name: "Tatenda Makunike",
-                role: "Founder & CEO",
-                bio: "With a passion for innovation and logistics, Tatenda founded MyDelivery with a clear vision to transform delivery services across Zimbabwe."
+                role: "Founder & Driver",
+                bio: "As both founder and our first driver, Tatenda is building MyDelivery from the ground up, handling every delivery personally while developing our vision."
               },
               {
-                name: "Chido Murehwa",
-                role: "Operations Lead",
-                bio: "Chido oversees our operational strategies, focused on building scalable systems that will support our ambitious growth plans."
+                name: "Position Open",
+                role: "Future Operations Lead",
+                bio: "We're looking for passionate individuals to join our team as we grow and expand our operations across Zimbabwe."
               },
               {
-                name: "Tendai Nyoni",
-                role: "Technology Strategist",
-                bio: "Leading our technology vision, Tendai is developing the digital roadmap that will power MyDelivery's expansion across Zimbabwe."
+                name: "Position Open",
+                role: "Future Technology Developer",
+                bio: "As we grow, we'll be expanding our technical capabilities to create a seamless delivery experience for all Zimbabweans."
               }
             ].map((person, index) => (
               <Card key={index}>
@@ -113,24 +113,22 @@ const AboutPage = () => {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-4">Our Vision for Tomorrow</h2>
             <p className="text-gray-200 max-w-2xl mx-auto">
-              While we're just taking our first steps, our ambitions for transforming Zimbabwe's delivery landscape are bold and clear.
+              We're just at the beginning of our journey, but our vision for transforming Zimbabwe's delivery landscape is clear and ambitious.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-mydelivery-blue/50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-mydelivery-yellow mb-3">Expanding Our Reach</h3>
+              <h3 className="text-xl font-bold text-mydelivery-yellow mb-3">Growing Our Network</h3>
               <p className="text-gray-200">
-                From our starting point in Harare, we're mapping our expansion to Zimbabwe's major cities and beyond. 
-                Our goal is to build a nationwide network that makes delivery accessible to all Zimbabweans, 
-                regardless of where they live.
+                Starting with our single-driver operation in Harare, we plan to expand our team and reach in the coming months.
+                Our roadmap includes bringing MyDelivery to all major cities in Zimbabwe, creating a reliable nationwide network.
               </p>
             </div>
             <div className="bg-mydelivery-blue/50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-mydelivery-yellow mb-3">Innovation in Service</h3>
+              <h3 className="text-xl font-bold text-mydelivery-yellow mb-3">Innovating Service</h3>
               <p className="text-gray-200">
-                We're committed to innovation in how deliveries are handled in Zimbabwe. From digital 
-                tracking to specialized handling options, we're building capabilities that will set new 
-                standards for delivery services in our country.
+                As we grow, we'll introduce new features like real-time tracking, expanded delivery options, and business accounts.
+                Every delivery teaches us something new, and we're committed to constantly improving our service.
               </p>
             </div>
           </div>
