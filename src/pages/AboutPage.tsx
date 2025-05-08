@@ -11,7 +11,7 @@ const AboutPage = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-mydelivery-blue mb-6">About MyDelivery</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Zimbabwe's newest delivery partner, connecting people with the things they need through innovative and customer-focused service.
+            Zimbabwe's newest delivery service, connecting people with the things they need through innovative solutions.
           </p>
         </div>
         
@@ -20,21 +20,17 @@ const AboutPage = () => {
           <div>
             <h2 className="text-3xl font-bold text-mydelivery-blue mb-4">Our Story</h2>
             <p className="text-gray-700 mb-4">
-              Founded in early 2025, MyDelivery emerged from a vision to transform local delivery services in Zimbabwe. 
+              Founded in early 2025, MyDelivery was born from a simple vision: to transform how local deliveries work in Zimbabwe.
             </p>
             <p className="text-gray-700 mb-4">
-              Starting with a focused operation in Harare, we're building the foundation for what will become Zimbabwe's most reliable delivery network. Our journey has just begun, but our commitment to excellence is already making an impact.
+              Starting with a focused operation in Harare, we're building the foundation for what will become Zimbabwe's most reliable delivery network. Our journey has just begun, and we're excited about the road ahead.
             </p>
             <p className="text-gray-700">
-              With ambitious expansion plans for Bulawayo, Gweru, and Mutare in the coming years, we're on a mission to revolutionize Zimbabwe's delivery landscape through accessible, affordable, and reliable service.
+              With plans for expansion to Bulawayo, Gweru, and Mutare on our roadmap, we're committed to creating a delivery service that truly meets the needs of Zimbabweans across the country.
             </p>
           </div>
-          <div className="rounded-lg overflow-hidden shadow-lg">
-            <img 
-              src="/placeholder.svg" 
-              alt="MyDelivery courier with motorcycle" 
-              className="w-full h-auto"
-            />
+          <div className="rounded-lg overflow-hidden shadow-lg bg-gray-100 flex items-center justify-center p-8">
+            <Package className="h-32 w-32 text-mydelivery-blue opacity-50" />
           </div>
         </div>
         
@@ -46,12 +42,12 @@ const AboutPage = () => {
               {
                 icon: Clock,
                 title: "Reliability",
-                description: "We understand that time matters. Our commitment to on-time delivery is unwavering."
+                description: "We understand that time matters. Our commitment to on-time delivery drives everything we do."
               },
               {
                 icon: Shield,
                 title: "Security",
-                description: "Your parcels are treated with the utmost care, with insurance coverage on every delivery."
+                description: "Every package is treated with care, with plans to implement insurance coverage as we grow."
               },
               {
                 icon: Users,
@@ -61,7 +57,7 @@ const AboutPage = () => {
               {
                 icon: MapPin,
                 title: "Accessibility",
-                description: "Making delivery services available to everyone, in urban centers and beyond."
+                description: "Our vision is to make delivery services available to everyone across Zimbabwe."
               }
             ].map((value, index) => (
               <Card key={index} className="border-t-4 border-t-mydelivery-green">
@@ -85,28 +81,23 @@ const AboutPage = () => {
               {
                 name: "Tatenda Makunike",
                 role: "Founder & CEO",
-                bio: "With a passion for innovation and logistics, Tatenda founded MyDelivery with a clear vision to transform delivery services across Zimbabwe.",
-                image: "/placeholder.svg"
+                bio: "With a passion for innovation and logistics, Tatenda founded MyDelivery with a clear vision to transform delivery services across Zimbabwe."
               },
               {
                 name: "Chido Murehwa",
                 role: "Operations Lead",
-                bio: "Chido oversees our operational strategies, focused on building scalable systems that will support our ambitious growth plans.",
-                image: "/placeholder.svg"
+                bio: "Chido oversees our operational strategies, focused on building scalable systems that will support our ambitious growth plans."
               },
               {
                 name: "Tendai Nyoni",
                 role: "Technology Strategist",
-                bio: "Leading our technology roadmap, Tendai is developing cutting-edge solutions that will power MyDelivery's expansion across Zimbabwe.",
-                image: "/placeholder.svg"
+                bio: "Leading our technology vision, Tendai is developing the digital roadmap that will power MyDelivery's expansion across Zimbabwe."
               }
             ].map((person, index) => (
               <Card key={index}>
                 <CardContent className="pt-6 text-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 bg-gray-200">
-                    <div className="w-full h-full flex items-center justify-center">
-                      <Users className="h-16 w-16 text-gray-400" />
-                    </div>
+                  <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 bg-gray-200 flex items-center justify-center">
+                    <Users className="h-16 w-16 text-gray-400" />
                   </div>
                   <h3 className="text-xl font-bold mb-1">{person.name}</h3>
                   <p className="text-mydelivery-green font-medium mb-3">{person.role}</p>
@@ -117,12 +108,12 @@ const AboutPage = () => {
           </div>
         </div>
         
-        {/* Future Vision instead of Statistics */}
+        {/* Future Vision */}
         <div className="bg-mydelivery-blue text-white rounded-lg py-12 px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-4">Our Vision for Tomorrow</h2>
             <p className="text-gray-200 max-w-2xl mx-auto">
-              While we're just getting started, our ambitions for transforming Zimbabwe's delivery landscape are bold and clear.
+              While we're just taking our first steps, our ambitions for transforming Zimbabwe's delivery landscape are bold and clear.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -137,9 +128,9 @@ const AboutPage = () => {
             <div className="bg-mydelivery-blue/50 p-6 rounded-lg">
               <h3 className="text-xl font-bold text-mydelivery-yellow mb-3">Innovation in Service</h3>
               <p className="text-gray-200">
-                We're investing in technology and training to create delivery experiences that exceed expectations. 
-                From real-time tracking to specialized handling, we're building capabilities that will set new 
-                standards for delivery service in Zimbabwe.
+                We're committed to innovation in how deliveries are handled in Zimbabwe. From digital 
+                tracking to specialized handling options, we're building capabilities that will set new 
+                standards for delivery services in our country.
               </p>
             </div>
           </div>
